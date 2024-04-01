@@ -1,7 +1,4 @@
 from santa_claus import *
-from time import time
-from math import *
-from numpy import *
 from random import *
 
 ##############
