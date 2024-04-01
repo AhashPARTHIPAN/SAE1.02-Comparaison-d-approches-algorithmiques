@@ -233,12 +233,13 @@ test_best_obtained_with_inversions()
 
 #Test des algorithmes
 
+#AFRIQUE
 print("Test avec des villes d'afrique")
-
 liste_villes_africa = lecture("africa.csv")
 dictionnaire_villes_africa = dictionary_cities(liste_villes_africa)
 tour_africa = list(dictionnaire_villes_africa)
 print("Afrique\n")
+
 print("algo1")
 tic = time()
 print(tour_from_closest_city("Luanda", dictionnaire_villes_africa))
@@ -259,18 +260,18 @@ print(tour_africa)
 tac = time()
 print("\ntemps d'execution de best_obtained_with_inversions",(tac - tic)*1000, "ms")
 
-print("\nTest avec des villes d'Europe:")
 
+print("\nTest avec des villes d'Europe:")
 liste_villes_europe = lecture("europe.csv")
 dictionnaire_villes_europe = dictionary_cities(liste_villes_europe)
 tour_europe = list(dictionnaire_villes_europe)
 print("Europe\n")
+
 print("algo1")
 tic = time()
 print(tour_from_closest_city("Copenhagen", dictionnaire_villes_europe))
 tac = time()
 print("temps d'execution de tour_from_closest_city",(tac - tic)*1000, "ms")
-
 
 print("\nalgo2")
 tic = time()
