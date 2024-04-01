@@ -1,5 +1,6 @@
 from santa_claus_2 import *
 from math import isclose
+from time import time
 
 
 def test_dictionary_cities():
@@ -229,3 +230,57 @@ test_reverse_part_tour()
 test_inversion_length_diff()
 test_better_inversion()
 test_best_obtained_with_inversions()
+
+#Test des algorithmes
+
+print("Test avec des villes d'afrique")
+
+liste_villes_africa = lecture("africa.csv")
+dictionnaire_villes_africa = dictionary_cities(liste_villes_africa)
+tour_africa = list(dictionnaire_villes_africa)
+print("Afrique\n")
+print("algo1")
+tic = time()
+print(tour_from_closest_city("Luanda", dictionnaire_villes_africa))
+tac = time()
+print("\ntemps d'execution de tour_from_closest_city",(tac - tic)*1000, "ms")
+
+
+print("\nalgo2")
+tic = time()
+print(best_tour_from_closest_city(dictionnaire_villes_africa))
+tac = time()
+print("\ntemps d'execution de best_tour_from_closest_city",(tac - tic)*1000, "ms")
+
+print("\nalgo3")
+tic = time()
+best_obtained_with_inversions(tour_africa, dictionnaire_villes_africa)
+print(tour_africa)
+tac = time()
+print("\ntemps d'execution de best_obtained_with_inversions",(tac - tic)*1000, "ms")
+
+print("\nTest avec beaucoup de villes d'Europe:")
+
+liste_villes_europe = lecture("europe.csv")
+dictionnaire_villes_europe = dictionary_cities(liste_villes_europe)
+tour_europe = list(dictionnaire_villes_europe)
+print("Europe\n")
+print("algo1")
+tic = time()
+print(tour_from_closest_city("Copenhagen", dictionnaire_villes_europe))
+tac = time()
+print("temps d'execution de tour_from_closest_city",(tac - tic)*1000, "ms")
+
+
+print("\nalgo2")
+tic = time()
+print(best_tour_from_closest_city(dictionnaire_villes_europe))
+tac = time()
+print("temps d'execution de best_tour_from_closest_city",(tac - tic)*1000, "ms")
+
+print("\nalgo3")
+tic = time()
+best_obtained_with_inversions(tour_europe, dictionnaire_villes_europe)
+print(tour_europe)
+tac = time()
+print("temps d'execution de best_obtained_with_inversions",(tac - tic)*1000, "ms")
