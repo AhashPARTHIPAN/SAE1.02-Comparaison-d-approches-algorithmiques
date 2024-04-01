@@ -1,4 +1,4 @@
-from santa_claus import *
+from santa_claus_2 import *
 from math import isclose
 
 def test_dictionary_cities():
