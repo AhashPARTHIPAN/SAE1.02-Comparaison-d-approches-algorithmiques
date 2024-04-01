@@ -146,8 +146,6 @@ dico = {
              'Lyon': 558.5472363339516, 
              'Marseille': 834.0220261600265}}
 
-print(inversion_length_diff(["Marseille", "Lyon", "Paris", "Lille"], dico, 1, 2))
-
 
 #Question11
 def better_inversion(tour, d_cities):
@@ -162,32 +160,6 @@ def better_inversion(tour, d_cities):
                 return True #retourne True car un changement a été effectué sur le tour
             reverse_part_tour(tour, i, j) #et on remet le tour à sa position initiale
     return False #retourne False car aucun changement n'a été effectué sur le tour
-
-
-
-dico = {
-    'Paris': {
-        'Lyon': 394.51, 
-        'Marseille': 661.86, 
-        'Lille': 203.67
-        }, 
-    'Lyon': {
-        'Paris': 394.51, 
-        'Marseille': 275.88, 
-        'Lille': 558.55
-        }, 
-    'Marseille': {
-        'Paris': 661.86, 
-        'Lyon': 275.88, 
-        'Lille': 834.02
-        }, 
-    'Lille': {
-        'Paris': 203.67, 
-        'Lyon': 558.55, 
-        'Marseille': 834.02
-        }
-    }
-print(better_inversion(["Marseille", "Lyon", "Lille", "Paris"], dico))
 
 
 #Question12
