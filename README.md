@@ -9,3 +9,7 @@ Cette SAE est la suite de la [SAE1.01](https://github.com/AhashPARTHIPAN/SAE1.01
 ## Description du projet
 
 Cette SAE étant le suite de la [SAE1.01](https://github.com/AhashPARTHIPAN/SAE1.01-Implementation-d-un-besoin-client), l'objectif est le même sauf qu'ici on va plutôt comparer les différentes approches algorithmiques liées à ce problème du voyageur de commerce.
+
+## Instructions
+
+Si **vous n'avez pas installé** les deux fichiers de la SAE précédente ([SAE1.01](https://github.com/AhashPARTHIPAN/SAE1.01-Implementation-d-un-besoin-client)), **veuillez le faire** pour éviter les erreurs.
