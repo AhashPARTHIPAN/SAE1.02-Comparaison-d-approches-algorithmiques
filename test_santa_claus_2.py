@@ -259,7 +259,7 @@ print(tour_africa)
 tac = time()
 print("\ntemps d'execution de best_obtained_with_inversions",(tac - tic)*1000, "ms")
 
-print("\nTest avec beaucoup de villes d'Europe:")
+print("\nTest avec des villes d'Europe:")
 
 liste_villes_europe = lecture("europe.csv")
 dictionnaire_villes_europe = dictionary_cities(liste_villes_europe)
