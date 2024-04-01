@@ -128,25 +128,6 @@ def inversion_length_diff(tour, d_cities, ind_b, ind_e):
     return long_tour - long_tour_inverse #difference entre longueur du tour init et inverse
 
 
-dico = {
-        'Paris': 
-            {'Lyon': 394.5056834297657, 
-             'Marseille': 661.8616554466852, 
-             'Lille': 203.67224282540448}, 
-        'Lyon': 
-            {'Paris': 394.5056834297657, 
-             'Marseille': 275.87965367431525, 
-             'Lille': 558.5472363339516}, 
-        'Marseille': 
-            {'Paris': 661.8616554466852, 
-             'Lyon': 275.87965367431525, 
-             'Lille': 834.0220261600265}, 
-        'Lille': 
-            {'Paris': 203.67224282540448, 
-             'Lyon': 558.5472363339516, 
-             'Marseille': 834.0220261600265}}
-
-
 #Question11
 def better_inversion(tour, d_cities):
     """renvoie True si une meilleure tournee est trouvée sinon False"""
