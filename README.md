@@ -17,4 +17,4 @@ Si **vous n'avez pas installé** les deux fichiers de la SAE précédente ([SAE1
 
 Si vous lancez le fichier test_santa_claus_2.py, vous obtiendrez plusieurs résultats: 
   - les **10 premiers résultats** montrent que toutes les fonctions fonctionnent bien.
-  - les prochaines lignes sont des exemples, le premier étant l'exemple avec une liste de villes d'Afrique (afrique.csv) et le suivant, une liste de villes d'Europe (europe.csv).
+  - les prochaines lignes sont des exemples, le premier exemple est une liste de villes d'Afrique (afrique.csv) et le suivant, une liste de villes d'Europe (europe.csv).
