@@ -36,6 +36,7 @@ def distance_cities(name1, name2, d_cities):
         return -1
 
 
+
 #Question3
 def tour_length(tour, d_cities):
     """renvoie la longueur du tour"""
@@ -127,6 +128,27 @@ def inversion_length_diff(tour, d_cities, ind_b, ind_e):
     return long_tour - long_tour_inverse #difference entre longueur du tour init et inverse
 
 
+dico = {
+        'Paris': 
+            {'Lyon': 394.5056834297657, 
+             'Marseille': 661.8616554466852, 
+             'Lille': 203.67224282540448}, 
+        'Lyon': 
+            {'Paris': 394.5056834297657, 
+             'Marseille': 275.87965367431525, 
+             'Lille': 558.5472363339516}, 
+        'Marseille': 
+            {'Paris': 661.8616554466852, 
+             'Lyon': 275.87965367431525, 
+             'Lille': 834.0220261600265}, 
+        'Lille': 
+            {'Paris': 203.67224282540448, 
+             'Lyon': 558.5472363339516, 
+             'Marseille': 834.0220261600265}}
+
+print(inversion_length_diff(["Marseille", "Lyon", "Paris", "Lille"], dico, 1, 2))
+
+
 #Question11
 def better_inversion(tour, d_cities):
     """renvoie True si une meilleure tournee est trouvée sinon False"""
@@ -140,6 +162,32 @@ def better_inversion(tour, d_cities):
                 return True #retourne True car un changement a été effectué sur le tour
             reverse_part_tour(tour, i, j) #et on remet le tour à sa position initiale
     return False #retourne False car aucun changement n'a été effectué sur le tour
+
+
+
+dico = {
+    'Paris': {
+        'Lyon': 394.51, 
+        'Marseille': 661.86, 
+        'Lille': 203.67
+        }, 
+    'Lyon': {
+        'Paris': 394.51, 
+        'Marseille': 275.88, 
+        'Lille': 558.55
+        }, 
+    'Marseille': {
+        'Paris': 661.86, 
+        'Lyon': 275.88, 
+        'Lille': 834.02
+        }, 
+    'Lille': {
+        'Paris': 203.67, 
+        'Lyon': 558.55, 
+        'Marseille': 834.02
+        }
+    }
+print(better_inversion(["Marseille", "Lyon", "Lille", "Paris"], dico))
 
 
 #Question12
